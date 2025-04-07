@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management System</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Student Name" required />
+    <input type="text" id="number" placeholder="Phone Number" required />
+    <input type="text" id="address" placeholder="Address" required />
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h2>Student List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
