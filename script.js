@@ -82,7 +82,7 @@ function getStudents() {
 function deleteStudent(id) {
   axios.delete(`${API_URL}/${id}`)
     .then(() => {
-      console.log("✅ Student Deleted");
+      console.log("Student Deleted");
       getStudents();
     })
     .catch((error) => {
