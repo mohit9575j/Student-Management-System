@@ -25,7 +25,7 @@ document.getElementById("studentForm").addEventListener("submit", function (e) {
 function createStudent(student) {
   axios.post(API_URL, student)
     .then(() => {
-      console.log("✅ Student Saved");
+      console.log("Student Saved");
       document.getElementById("studentForm").reset();
       getStudents();
     })
