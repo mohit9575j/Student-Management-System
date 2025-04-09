@@ -95,7 +95,7 @@ function editStudent(id, name, number, address) {
   document.getElementById("name").value = name;
   document.getElementById("number").value = number;
   document.getElementById("address").value = address;
-  editId = id; // ab form submit hone par update hoga
+  editId = id; 
 }
 
 
